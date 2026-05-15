@@ -1,7 +1,7 @@
 "use client";
 import { useState, Suspense } from "react";
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import {
   Zap,
   Building2,
@@ -37,7 +37,7 @@ const ROLES = [
 
 export default function LoginPage() {
   const router = useRouter();
-  const searchParams = useSearchParams();
+  // const searchParams = useSearchParams();
   const defaultRole = "employer";
 
   const [selectedRole, setSelectedRole] = useState(defaultRole);
