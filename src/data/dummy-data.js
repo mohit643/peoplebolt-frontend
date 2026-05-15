@@ -1,0 +1,440 @@
+// ─── src/data/jobs.js ───
+export const DUMMY_JOBS = [
+  {
+    id: 1,
+    title: "Senior React Developer",
+    company: "Infosys BPO",
+    location: "Noida",
+    type: "Full-time",
+    exp: "3-5 yrs",
+    salaryMin: 12,
+    salaryMax: 18,
+    deadline: "2025-05-20",
+    skills: ["React", "TypeScript", "Node.js"],
+    openings: 2,
+    status: "Active",
+  },
+  {
+    id: 2,
+    title: "DevOps Engineer",
+    company: "TCS Digital",
+    location: "Remote",
+    type: "Full-time",
+    exp: "5-8 yrs",
+    salaryMin: 14,
+    salaryMax: 20,
+    deadline: "2025-05-22",
+    skills: ["AWS", "Docker", "Kubernetes"],
+    openings: 1,
+    status: "Active",
+  },
+  {
+    id: 3,
+    title: "Product Manager",
+    company: "Wipro Ltd",
+    location: "Bangalore",
+    type: "Full-time",
+    exp: "5-8 yrs",
+    salaryMin: 18,
+    salaryMax: 26,
+    deadline: "2025-05-18",
+    skills: ["Agile", "Jira", "Roadmapping"],
+    openings: 1,
+    status: "Active",
+  },
+  {
+    id: 4,
+    title: "UI/UX Designer",
+    company: "HCL Tech",
+    location: "Mumbai",
+    type: "Contract",
+    exp: "3-5 yrs",
+    salaryMin: 8,
+    salaryMax: 12,
+    deadline: "2025-05-25",
+    skills: ["Figma", "Adobe XD", "Prototyping"],
+    openings: 3,
+    status: "Active",
+  },
+  {
+    id: 5,
+    title: "Data Analyst",
+    company: "Cognizant",
+    location: "Hyderabad",
+    type: "Full-time",
+    exp: "1-3 yrs",
+    salaryMin: 7,
+    salaryMax: 11,
+    deadline: "2025-05-15",
+    skills: ["SQL", "Python", "Tableau"],
+    openings: 2,
+    status: "Closed",
+  },
+  {
+    id: 6,
+    title: "Java Backend Developer",
+    company: "Accenture",
+    location: "Pune",
+    type: "Full-time",
+    exp: "3-5 yrs",
+    salaryMin: 10,
+    salaryMax: 15,
+    deadline: "2025-05-28",
+    skills: ["Java", "Spring Boot", "Microservices"],
+    openings: 4,
+    status: "Active",
+  },
+  {
+    id: 7,
+    title: "Mobile App Developer",
+    company: "Tech Mahindra",
+    location: "Chennai",
+    type: "Full-time",
+    exp: "2-4 yrs",
+    salaryMin: 9,
+    salaryMax: 14,
+    deadline: "2025-05-30",
+    skills: ["Flutter", "React Native", "iOS"],
+    openings: 2,
+    status: "Active",
+  },
+  {
+    id: 8,
+    title: "QA Automation Engineer",
+    company: "Mphasis",
+    location: "Bangalore",
+    type: "Contract",
+    exp: "3-5 yrs",
+    salaryMin: 8,
+    salaryMax: 13,
+    deadline: "2025-05-25",
+    skills: ["Selenium", "Cypress", "TestNG"],
+    openings: 3,
+    status: "Active",
+  },
+  {
+    id: 9,
+    title: "Business Analyst",
+    company: "L&T Infotech",
+    location: "Mumbai",
+    type: "Full-time",
+    exp: "3-6 yrs",
+    salaryMin: 10,
+    salaryMax: 16,
+    deadline: "2025-05-22",
+    skills: ["BRD", "Stakeholder", "SQL"],
+    openings: 1,
+    status: "Active",
+  },
+  {
+    id: 10,
+    title: "Cloud Architect",
+    company: "IBM India",
+    location: "Remote",
+    type: "Full-time",
+    exp: "8+ yrs",
+    salaryMin: 25,
+    salaryMax: 40,
+    deadline: "2025-06-01",
+    skills: ["Azure", "AWS", "GCP"],
+    openings: 1,
+    status: "Active",
+  },
+];
+
+// ─── src/data/candidates.js ───
+export const DUMMY_CANDIDATES = [
+  {
+    id: 1,
+    name: "Amit Kumar",
+    initials: "AK",
+    jobId: 1,
+    vendorId: 1,
+    exp: "4 yrs",
+    currentCtc: 10,
+    expectedCtc: 14,
+    notice: "30 days",
+    location: "Noida",
+    status: "Shortlisted",
+    applied: "2025-05-12",
+  },
+  {
+    id: 2,
+    name: "Priya Singh",
+    initials: "PS",
+    jobId: 2,
+    vendorId: 2,
+    exp: "5 yrs",
+    currentCtc: 13,
+    expectedCtc: 18,
+    notice: "30 days",
+    location: "Remote",
+    status: "Interview",
+    applied: "2025-05-11",
+  },
+  {
+    id: 3,
+    name: "Rohit Verma",
+    initials: "RV",
+    jobId: 3,
+    vendorId: 3,
+    exp: "6 yrs",
+    currentCtc: 17,
+    expectedCtc: 22,
+    notice: "45 days",
+    location: "Bangalore",
+    status: "Offered",
+    applied: "2025-05-10",
+  },
+  {
+    id: 4,
+    name: "Neha Kapoor",
+    initials: "NK",
+    jobId: 4,
+    vendorId: 4,
+    exp: "3 yrs",
+    currentCtc: 7,
+    expectedCtc: 10,
+    notice: "15 days",
+    location: "Mumbai",
+    status: "Applied",
+    applied: "2025-05-13",
+  },
+  {
+    id: 5,
+    name: "Suresh Mishra",
+    initials: "SM",
+    jobId: 5,
+    vendorId: 5,
+    exp: "2 yrs",
+    currentCtc: 5,
+    expectedCtc: 8,
+    notice: "Immediate",
+    location: "Hyderabad",
+    status: "Applied",
+    applied: "2025-05-13",
+  },
+  {
+    id: 6,
+    name: "Kavita Rao",
+    initials: "KR",
+    jobId: 1,
+    vendorId: 1,
+    exp: "5 yrs",
+    currentCtc: 12,
+    expectedCtc: 16,
+    notice: "45 days",
+    location: "Noida",
+    status: "Screened",
+    applied: "2025-05-12",
+  },
+  {
+    id: 7,
+    name: "Manish Gupta",
+    initials: "MG",
+    jobId: 2,
+    vendorId: 2,
+    exp: "4 yrs",
+    currentCtc: 11,
+    expectedCtc: 15,
+    notice: "60 days",
+    location: "Pune",
+    status: "Rejected",
+    applied: "2025-05-09",
+  },
+  {
+    id: 8,
+    name: "Anjali Mehta",
+    initials: "AM",
+    jobId: 3,
+    vendorId: 3,
+    exp: "7 yrs",
+    currentCtc: 19,
+    expectedCtc: 24,
+    notice: "30 days",
+    location: "Delhi",
+    status: "Shortlisted",
+    applied: "2025-05-11",
+  },
+];
+
+// ─── src/data/vendors.js ───
+export const DUMMY_VENDORS = [
+  {
+    id: 1,
+    name: "TechStaff Pvt",
+    initials: "TS",
+    city: "Noida",
+    contact: "Amit Verma",
+    email: "hr@techstaff.com",
+    status: "Active",
+    submitted: 32,
+    placed: 6,
+  },
+  {
+    id: 2,
+    name: "CloudHire",
+    initials: "CH",
+    city: "Bangalore",
+    contact: "Priya Nair",
+    email: "ops@cloudhire.in",
+    status: "Active",
+    submitted: 24,
+    placed: 4,
+  },
+  {
+    id: 3,
+    name: "TalentBridge",
+    initials: "TB",
+    city: "Delhi",
+    contact: "Rohit Saxena",
+    email: "ro@talentbridge.in",
+    status: "Active",
+    submitted: 18,
+    placed: 3,
+  },
+  {
+    id: 4,
+    name: "PixelPeople",
+    initials: "PP",
+    city: "Mumbai",
+    contact: "Neha Shah",
+    email: "info@pixelpeople.co",
+    status: "Pending",
+    submitted: 14,
+    placed: 1,
+  },
+  {
+    id: 5,
+    name: "DataForce India",
+    initials: "DF",
+    city: "Hyderabad",
+    contact: "Suresh R.",
+    email: "admin@dataforce.in",
+    status: "Pending",
+    submitted: 10,
+    placed: 0,
+  },
+];
+
+// ─── src/data/employers.js ───
+export const DUMMY_EMPLOYERS = [
+  {
+    id: 1,
+    name: "Infosys BPO",
+    initials: "IB",
+    city: "Noida",
+    contact: "Rahul Sharma",
+    email: "rahul@infosys.com",
+    activeJobs: 8,
+    totalHires: 12,
+  },
+  {
+    id: 2,
+    name: "TCS Digital",
+    initials: "TD",
+    city: "Mumbai",
+    contact: "Anita Roy",
+    email: "anita@tcs.com",
+    activeJobs: 6,
+    totalHires: 8,
+  },
+  {
+    id: 3,
+    name: "Wipro Ltd",
+    initials: "WL",
+    city: "Bangalore",
+    contact: "Sanjay K.",
+    email: "hr@wipro.com",
+    activeJobs: 5,
+    totalHires: 6,
+  },
+  {
+    id: 4,
+    name: "HCL Tech",
+    initials: "HT",
+    city: "Noida",
+    contact: "Meena T.",
+    email: "talent@hcltech.com",
+    activeJobs: 4,
+    totalHires: 5,
+  },
+  {
+    id: 5,
+    name: "Accenture",
+    initials: "AC",
+    city: "Pune",
+    contact: "James D.",
+    email: "james@accenture.com",
+    activeJobs: 3,
+    totalHires: 3,
+  },
+];
+
+// ─── src/lib/auth.js  (dummy JWT helpers) ───
+// Replace with real JWT logic using next-auth or jose
+
+export const ROLES = {
+  EMPLOYER: "employer",
+  VENDOR: "vendor",
+  CANDIDATE: "candidate",
+  ADMIN: "admin",
+};
+
+export const ROLE_REDIRECTS = {
+  [ROLES.EMPLOYER]: "/employer/dashboard",
+  [ROLES.VENDOR]: "/vendor/dashboard",
+  [ROLES.CANDIDATE]: "/candidate/profile",
+  [ROLES.ADMIN]: "/admin/dashboard",
+};
+
+/**
+ * Dummy: get current user from localStorage (replace with real JWT decode)
+ * @returns {{ name: string, role: string, email: string } | null}
+ */
+export function getCurrentUser() {
+  if (typeof window === "undefined") return null;
+  try {
+    const raw = localStorage.getItem("pb_user");
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Dummy login — sets user in localStorage
+ * Replace with: POST /api/auth/login → set HttpOnly cookie with JWT
+ */
+export function dummyLogin(role) {
+  const users = {
+    [ROLES.EMPLOYER]: {
+      name: "Rahul Sharma",
+      email: "rahul@infosys.com",
+      role: ROLES.EMPLOYER,
+    },
+    [ROLES.VENDOR]: {
+      name: "TechStaff Pvt",
+      email: "hr@techstaff.com",
+      role: ROLES.VENDOR,
+    },
+    [ROLES.CANDIDATE]: {
+      name: "Amit Kumar",
+      email: "amit@gmail.com",
+      role: ROLES.CANDIDATE,
+    },
+    [ROLES.ADMIN]: {
+      name: "Super Admin",
+      email: "admin@vaytix.com",
+      role: ROLES.ADMIN,
+    },
+  };
+  if (typeof window !== "undefined") {
+    localStorage.setItem("pb_user", JSON.stringify(users[role]));
+  }
+  return ROLE_REDIRECTS[role];
+}
+
+export function logout() {
+  if (typeof window !== "undefined") localStorage.removeItem("pb_user");
+}
