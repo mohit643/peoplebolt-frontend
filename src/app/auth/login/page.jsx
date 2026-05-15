@@ -38,7 +38,7 @@ const ROLES = [
 export default function LoginPage() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const defaultRole = searchParams.get("role") || "employer";
+  const defaultRole = "employer";
 
   const [selectedRole, setSelectedRole] = useState(defaultRole);
   const [showPwd, setShowPwd] = useState(false);
